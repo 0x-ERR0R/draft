@@ -309,17 +309,18 @@ async function deleteSentence(eleRef, delay = 40) {
 
 //---Play Button---
 
-if (!localStorage.getItem("stage")) {
-
-    play.addEventListener("click", function(e) {
-        play.style.visibility = "hidden";
-        stageOne()
-    })  
-} else if (localStorage.getItem("stage") == "2a") {
+if (localStorage.getItem("stage") == "2a") {
     play.style.visibility = "hidden";
     consoleText.innerHTML = "You chose: the facility route."
 
 } else if (localStorage.getItem("stage") == "2b") {
     play.style.visibility = "hidden";
     consoleText.innerHTML = "You chose: the forest route."
+
+} else {
+    play.addEventListener("click", function(e) {
+        console.log("A")
+        play.style.visibility = "hidden";
+        stageOne()
+    })  
 }
