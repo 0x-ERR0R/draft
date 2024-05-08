@@ -1,0 +1,86 @@
+$main-colour: #080808
+$second-colour: #171717
+$hover-colour: #212121
+$text-colour: #e0e0e0
+$console-colour: #edd66f
+$error-colour: #d80000
+$terminal-font: "Lucida Console"
+
+body 
+    background-color: $main-colour
+    overflow: hidden
+
+#play
+    width: 4vw
+    height: 4vw
+    &:hover 
+        cursor: pointer
+
+#glitch
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    width: 100vw
+    z-index: 2
+    visibility: hidden
+
+#console
+    max-width: 50vw
+
+.choice
+    display: flex
+    justify-content: space-around
+    align-items: center
+    column-gap: 5%
+
+.button
+    font-family: "Times New Roman"
+    background-color: $second-colour
+    color: $text-colour
+    border: 1%
+    border-color: $text-colour
+    border-radius: 5%
+    padding: 1vw 1vw
+    max-width: 10vw
+    text-decoration: none
+    text-align: center
+    visibility: hidden
+    &:hover 
+        background-color: $hover-colour
+        cursor: pointer
+    &:active
+        background-color: $main-colour
+
+.terminal
+    color: $text-colour
+    font-family: $terminal-font
+    font-size: 3vh
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    row-gap: 10%
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+@keyframes blink 
+    0% 
+        opacity: 1
+    40% 
+        opacity: 1
+    60% 
+        opacity: 0
+    100% 
+        opacity: 0
+  
+// #inputCursor 
+//     display: inline-block
+//     width: 2px
+//     height: 3vh
+//     background-color: white
+//     margin-left: 8px
+//     visibility: hidden
+//     animation: blink .6s linear infinite alternate
+
