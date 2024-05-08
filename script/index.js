@@ -74,7 +74,7 @@ function stageOne() {
         "Opening interface...",
         "Scanning user...",
         "Verification complete.",
-        "Welcome back, ????. The door will now be unlocked.",
+        "Welcome back, Ryan. The door will now be unlocked.",
         "Closing interface...",
         //resume narration --32
         "As you move through the door, a screech resonates throughout your ears.",
