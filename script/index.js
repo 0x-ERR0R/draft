@@ -62,7 +62,7 @@ function stageOne() {
         " Behind you is the sound of thudding, slowly getting louder and louder.",
         " Something is definitely coming for you.",
         //paragraph break -- 20
-        "It takes a little bit to get your footing, but you manage to stabilise yourself.",
+        "It takes a little bit to gain your footing, but you manage to stabilise yourself.",
         " You break out into a run. ",
         " Whatever's after you isn't showing any sign of stopping.",
         //paragraph break -- 23
