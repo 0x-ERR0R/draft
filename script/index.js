@@ -62,7 +62,7 @@ function stageOne() {
         " Behind you is the sound of thudding, slowly getting louder and louder.",
         " Something is definitely coming for you.",
         //paragraph break -- 20
-        "It takes a little bit to gain your footing, but you manage to stabilise yourself.",
+        "It takes a little bit to get your footing, but you manage to stabilise yourself.",
         " You break out into a run. ",
         " Whatever's after you isn't showing any sign of stopping.",
         //paragraph break -- 23
@@ -74,7 +74,7 @@ function stageOne() {
         "Opening interface...",
         "Scanning user...",
         "Verification complete.",
-        "Welcome back, Ryan. The door will now be unlocked.",
+        "Welcome back, ????. The door will now be unlocked.",
         "Closing interface...",
         //resume narration --32
         "As you move through the door, a screech resonates throughout your ears.",
@@ -310,12 +310,14 @@ async function deleteSentence(eleRef, delay = 40) {
 //---Play Button---
 
 if (localStorage.getItem("stage") == "2a") {
-    play.style.visibility = "hidden";
-    consoleText.innerHTML = "You chose: the facility route."
+    //play.style.visibility = "hidden";
+    //consoleText.innerHTML = "You chose: the facility route."
+    window.location.replace("pages/facility.html");
 
 } else if (localStorage.getItem("stage") == "2b") {
-    play.style.visibility = "hidden";
-    consoleText.innerHTML = "You chose: the forest route."
+    //play.style.visibility = "hidden";
+    //consoleText.innerHTML = "You chose: the forest route."
+    window.location.replace("pages/forest.html");
 
 } else {
     play.addEventListener("click", function(e) {
